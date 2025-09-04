@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/WrapperStyle">
+            <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="8h" custom:wkWidth="90w">
+                <kingdom.strategy.war.customViews.WkTextView android:gravity="center_vertical" android:id="@id/tv_worldName" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="5h" custom:wkMarginLeft="4w" custom:wkWidth="90w" style="@style/WorldListTextStyle" />
+                <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_1" android:gravity="top" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="3h" custom:wkMarginLeft="4w" custom:wkWidth="90w" style="@style/SmallContentTextStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

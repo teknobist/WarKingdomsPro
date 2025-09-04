@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingBottom="1h" custom:wkPaddingLeft="4w" custom:wkPaddingRight="4w" custom:wkPaddingTop="4h">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/dynamic" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMarginTop="4w" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center" android:id="@id/no_units" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkHeight="30h" custom:wkWidth="90w" style="@style/ContentTextStyle" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+</LinearLayout>

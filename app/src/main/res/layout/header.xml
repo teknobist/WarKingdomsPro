@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_navbar" custom:wkHeight="10h" custom:wkWidth="100w" />
+    <kingdom.strategy.war.customViews.WkImageView android:id="@id/headerback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navbarbutton_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" custom:wkHeight="9h" custom:wkMarginLeft="1w" custom:wkWidth="9h" />
+    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/white" android:gravity="center" android:id="@id/headerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" custom:wkHeight="9h" custom:wkMarginBottom="0.5h" custom:wkMarginTop="0.5h" custom:wkWidth="70w" style="@style/HeaderTextStyle" />
+    <kingdom.strategy.war.customViews.WkImageView android:id="@id/headerhome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navbarbutton_castle" android:layout_alignParentRight="true" android:layout_centerVertical="true" custom:wkHeight="9h" custom:wkMarginRight="1w" custom:wkWidth="9h" />
+</RelativeLayout>

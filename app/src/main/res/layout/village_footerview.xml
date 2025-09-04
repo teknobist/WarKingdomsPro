@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMarginTop="2w"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkImageView android:background="@drawable/separator_spear" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="0.5h" custom:wkMarginBottom="2.5h" custom:wkWidth="90w" />
+    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/brown_1" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" style="@style/ContentTextStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMargin="5w">
+            <RadioGroup android:orientation="vertical" android:id="@id/rg_dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/radioButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContentTextStyle" />
+                <RadioButton android:id="@id/radioButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContentTextStyle" />
+                <RadioButton android:id="@id/radioButton3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContentTextStyle" />
+            </RadioGroup>
+            <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkMarginLeft="10w">
+                <kingdom.strategy.war.customViews.WkEditText android:id="@id/et_dismiss_units" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="3" android:inputType="number" android:imeOptions="actionDone" custom:wkHeight="6h" custom:wkWidth="30w" style="@style/EditTextStyle" />
+                <kingdom.strategy.war.customViews.WkButton android:id="@id/btn_dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkWidth="30w" style="@style/RedButtonStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</kingdom.strategy.war.customViews.WkLinearLayout>

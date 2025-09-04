@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView4" android:background="@drawable/timer4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" custom:wkHeight="20h" custom:wkWidth="20h" />
+</RelativeLayout>

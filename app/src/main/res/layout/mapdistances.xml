@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="4w" custom:wkPaddingRight="4w" custom:wkPaddingTop="4h">
+            <kingdom.strategy.war.customViews.WkLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMargin="2w" custom:wkPadding="2w" style="@style/WrapperStyle">
+                <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ContentTextStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_distances" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

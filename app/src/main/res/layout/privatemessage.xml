@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="3w" custom:wkPaddingRight="3w" custom:wkPaddingTop="3h">
+            <kingdom.strategy.war.customViews.WkLinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.1" custom:wkPaddingLeft="1w" custom:wkPaddingRight="1w">
+                <RelativeLayout android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/green_message" android:gravity="center|left" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" custom:wkHeight="4h" custom:wkMarginLeft="2w" custom:wkWidth="40w" style="@style/ContentTextStyle" />
+                    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/blue_1" android:gravity="center|right" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" custom:wkHeight="4h" custom:wkMarginRight="2w" custom:wkWidth="40w" style="@style/ContentTextStyle" />
+                    <kingdom.strategy.war.customViews.WkImageView android:id="@id/tll1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/separator_spear" android:layout_below="@id/textView2" android:layout_centerHorizontal="true" custom:wkHeight="1h" custom:wkMarginBottom="1h" custom:wkMarginTop="1h" custom:wkWidth="90w" />
+                    <kingdom.strategy.war.customViews.WkListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:layout_below="@id/tll1" custom:wkMarginLeft="1w" custom:wkMarginRight="1w" />
+                    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/submenu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="15h" custom:wkPadding="1h" custom:wkWidth="38w" style="@style/ActionBalloonStyle">
+                        <kingdom.strategy.war.customViews.WkButton android:id="@id/button5" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkMarginBottom="1h" custom:wkWidth="35w" style="@style/BlueButtonStyle" />
+                        <kingdom.strategy.war.customViews.WkButton android:id="@id/button6" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkMarginBottom="1h" custom:wkWidth="35w" style="@style/RedButtonStyle" />
+                    </kingdom.strategy.war.customViews.WkLinearLayout>
+                </RelativeLayout>
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+            <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/writing_message_layout" android:background="@drawable/bg_containerbar_tilable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" custom:wkHeight="10h" custom:wkWidth="95w">
+                <kingdom.strategy.war.customViews.WkEditText android:layout_gravity="center_vertical" android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="12" custom:wkHeight="8h" custom:wkMargin="1h" custom:wkWidth="68w" style="@style/EditTextStyle" />
+                <kingdom.strategy.war.customViews.WkButton android:textColor="@color/white" android:id="@id/button3" android:background="@drawable/messageentry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkWidth="20w" style="@style/GreenButtonStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

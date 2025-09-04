@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/alliance_main_layout" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="4w" custom:wkPaddingRight="4w" custom:wkPaddingTop="4h">
+            <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/WrapperStyle">
+                <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkMarginBottom="1h" style="@style/ContentTextStyle" />
+                <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkMarginBottom="1h" style="@style/ContentTextStyle" />
+                <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContentTextStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+            <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_1" android:gravity="center" android:id="@id/textView4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="70h" custom:wkWidth="90w" style="@style/ContentTextStyle" />
+            <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/gray_1" android:dividerHeight="1.0dip" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

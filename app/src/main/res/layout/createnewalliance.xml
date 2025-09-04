@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/alliance_main_layout" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="3w" custom:wkPaddingRight="3w" custom:wkPaddingTop="4h">
+            <kingdom.strategy.war.customViews.WkTextView android:gravity="center" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="5w" custom:wkMarginBottom="2h" custom:wkMarginTop="6h" custom:wkWidth="95w" style="@style/ContentTextStyle" />
+            <kingdom.strategy.war.customViews.WkEditText android:layout_gravity="center_horizontal" android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="15" android:imeOptions="actionDone" custom:wkHeight="7h" custom:wkWidth="60w" style="@style/EditTextStyle" />
+            <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/gray_1" android:gravity="center" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="4w" custom:wkMarginBottom="4h" custom:wkWidth="95w" style="@style/CountdownTextStyle" />
+            <kingdom.strategy.war.customViews.WkButton android:layout_gravity="center_horizontal" android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkWidth="30w" style="@style/GreenButtonStyle" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

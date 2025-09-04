@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_armageddon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="55h" custom:wkWidth="80w"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <kingdom.strategy.war.customViews.WkRelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="12w" custom:wkMarginBottom="2h" custom:wkWidth="76w">
+                <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/HeaderTextStyle" />
+                <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView2" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/modalbox_closebtn" android:layout_alignParentRight="true" android:layout_centerVertical="true" custom:wkHeight="10w" custom:wkMarginRight="3w" custom:wkWidth="10w" />
+            </kingdom.strategy.war.customViews.WkRelativeLayout>
+            <kingdom.strategy.war.customViews.WkLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="24h" custom:wkWidth="70w">
+                <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/bronze" android:gravity="center_horizontal" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" custom:wkMarginBottom="4h" style="@style/ContentHeaderTextStyle" />
+                <TextView android:textColor="@color/bronze" android:gravity="center_horizontal" android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ContentHeaderTextStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+        </LinearLayout>
+        <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" custom:wkHeight="8w" custom:wkMarginBottom="10h" custom:wkWidth="50w">
+            <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/bronze" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContentHeaderTextStyle" />
+            <kingdom.strategy.war.customViews.WkImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gold" custom:wkHeight="8w" custom:wkMarginLeft="1w" custom:wkWidth="8w" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+        <kingdom.strategy.war.customViews.WkButton android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" custom:wkHeight="6h" custom:wkMarginBottom="4h" custom:wkWidth="30w" style="@style/GreenButtonStyle" />
+    </RelativeLayout>
+</kingdom.strategy.war.customViews.WkLinearLayout>

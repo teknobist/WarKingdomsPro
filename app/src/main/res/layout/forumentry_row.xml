@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto"
+  xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui">
+    <kingdom.strategy.war.customViews.WkRelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="5h" custom:wkWidth="80w">
+        <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" custom:wkHeight="3w" custom:wkMarginRight="1w" custom:wkWidth="3w" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView2" android:layout_centerVertical="true" custom:wkHeight="5h" custom:wkWidth="80w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mono_cross_red" android:layout_alignParentRight="true" custom:wkHeight="8w" custom:wkWidth="8w" />
+    </kingdom.strategy.war.customViews.WkRelativeLayout>
+    <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ForumEntryTextStyle" />
+    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/gray_1" android:gravity="right" android:layout_gravity="right" android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" custom:wkMarginBottom="3h" style="@style/CountdownTextStyle" />
+</LinearLayout>

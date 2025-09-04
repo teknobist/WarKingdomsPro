@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="10h" custom:wkMarginLeft="4w" custom:wkMarginTop="2h" custom:wkWidth="85w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkMarginLeft="4w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkLinearLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="62h" custom:wkWidth="90w" style="@style/WrapperStyle">
+            <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center" android:id="@id/textView2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="10h" custom:wkWidth="90w" style="@style/ContentTextStyle" />
+            <ListView android:id="@id/lv_invitations" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/gray_1" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+        <kingdom.strategy.war.customViews.WkButton android:layout_gravity="center_horizontal" android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" custom:wkHeight="6h" custom:wkMarginBottom="2h" custom:wkMarginTop="2h" custom:wkWidth="50w" style="@style/BlueButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

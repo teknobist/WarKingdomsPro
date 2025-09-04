@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "747922514602",
+    "project_id": "warkingdoms-e5281",
+    "storage_bucket": "warkingdoms-e5281.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747922514602:android:dc26e4a8e3036fd6cd26d3",
+        "android_client_info": {
+          "package_name": "com.warkingdoms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747922514602-a787soejpl7t3ub33sah6af2afifqnbq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.warkingdoms.turkuaz",
+            "certificate_hash": "63492a5ab4877ca0fc397dcb8c7c38f8107e3462"
+          }
+        },
+        {
+          "client_id": "747922514602-s4tp6uu76t62t22ii3jus4313rh3rhfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxQtOYXjh1BubXoPZumMpEgNOmIsIJYYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747922514602-s4tp6uu76t62t22ii3jus4313rh3rhfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

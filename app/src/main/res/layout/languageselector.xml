@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/modalbox_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="80h" custom:wkPaddingBottom="6h" custom:wkWidth="80w"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkRelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="12w" custom:wkMarginBottom="5w" custom:wkWidth="80w">
+        <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/modalbox_backbtn" android:layout_alignParentLeft="true" custom:wkHeight="10w" custom:wkMarginLeft="5w" custom:wkMarginTop="1w" custom:wkWidth="10w" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/default_text_color" android:gravity="center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/HeaderTextStyle" />
+        <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/modalbox_closebtn" android:layout_alignParentRight="true" custom:wkHeight="10w" custom:wkMarginRight="5w" custom:wkMarginTop="1w" custom:wkWidth="10w" />
+    </kingdom.strategy.war.customViews.WkRelativeLayout>
+    <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" />
+</kingdom.strategy.war.customViews.WkLinearLayout>

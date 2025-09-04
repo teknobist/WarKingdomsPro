@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page_forum" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="3w" custom:wkPaddingRight="3w" custom:wkPaddingTop="4h">
+            <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.1" custom:wkPaddingLeft="1w" custom:wkPaddingRight="1w">
+                <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+            <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/writing_message_layout" android:background="@drawable/bg_containerbar_tilable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" custom:wkHeight="10h" custom:wkWidth="95w">
+                <kingdom.strategy.war.customViews.WkEditText android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="8h" custom:wkMargin="1h" custom:wkWidth="68w" style="@style/EditTextStyle" />
+                <kingdom.strategy.war.customViews.WkButton android:textColor="@color/white" android:id="@id/button1" android:background="@drawable/messageentry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkWidth="20w" style="@style/GreenButtonStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

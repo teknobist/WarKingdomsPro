@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto"
+  xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui">
+    <kingdom.strategy.war.customViews.WkButton android:textSize="15.0sp" android:id="@id/button4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkMarginBottom="5w" custom:wkWidth="90w" style="@style/WrapperStyle" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <kingdom.strategy.war.customViews.WkRelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="15w" custom:wkMarginTop="4w" custom:wkWidth="100w">
+                <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/introarrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" custom:wkHeight="10w" custom:wkMarginLeft="4w" custom:wkWidth="10w" />
+                <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" custom:wkHeight="8w" custom:wkWidth="70w" style="@style/ContentTextStyle" />
+            </kingdom.strategy.war.customViews.WkRelativeLayout>
+            <kingdom.strategy.war.customViews.WkListView android:id="@id/lv_worlds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" custom:wkMarginLeft="4w" custom:wkMarginRight="4w" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

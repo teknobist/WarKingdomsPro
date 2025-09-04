@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.VScroll android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbarFadeDuration="0">
+        <kingdom.strategy.war.customViews.HScroll android:id="@id/horizontalScrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbarFadeDuration="0">
+            <kingdom.strategy.war.customViews.MyMap android:id="@id/map" android:layout_width="38988.0dip" android:layout_height="38988.0dip" />
+        </kingdom.strategy.war.customViews.HScroll>
+    </kingdom.strategy.war.customViews.VScroll>
+    <ImageView android:id="@id/cities" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/map_citybutton" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/search" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="100.0dip" android:src="@drawable/map_searchbutton" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/layout1" android:background="@color/gray_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" custom:wkHeight="38w" custom:wkMarginBottom="2w" custom:wkMarginRight="2w" custom:wkWidth="32w">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="7w" custom:wkWidth="30w">
+            <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkHeight="7w" custom:wkPaddingLeft="2w" custom:wkWidth="25w" style="@style/SmallContentTextStyle" />
+            <kingdom.strategy.war.customViews.WkImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_orange" custom:wkHeight="5w" custom:wkWidth="5w" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+        <kingdom.strategy.war.customViews.WkRelativeLayout android:id="@id/minimap" android:background="@drawable/minimap256" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkHeight="30w" custom:wkMargin="1w" custom:wkMarginTop="0w" custom:wkWidth="30w" />
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/distance" android:background="@drawable/map_tracker" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="30.0dip">
+        <kingdom.strategy.war.customViews.WkTextView android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </LinearLayout>
+</RelativeLayout>

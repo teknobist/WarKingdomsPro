@@ -1,0 +1,139 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Users Collection - Kullanıcı verileri
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // User profile data based on ViewKingdomDto$Userdata
+      // Fields: user_id, achievement_set, age, age_point, created_colonies,
+      // email_confirmed, last_message, last_news, last_notification, last_task,
+      // loss, privacy, protection_mode, ref, task_completed, wiki_rating, win
+    }
+    
+    // Kingdoms Collection - Krallık verileri
+    match /kingdoms/{kingdomId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && 
+        (resource.data.owner_id == request.auth.uid || 
+         request.auth.uid in resource.data.alliance_members);
+      
+      // Kingdom data based on ViewKingdomDto$Kingdom and KingdomInfoDto
+      // Fields: base_id, city, civ, country, email, gender, id, lastlogin,
+      // logincount, network, status, username, age_count, age_name, age_point,
+      // alliance_gold_gain, center_food_consumption, center_food_gain,
+      // center_gold_gain, center_wood_gain, city_diamond_gain, colony_gold_gain,
+      // farmer_count_text, goldminer_count_text, woodcutter_count_text,
+      // milunit_center_count_text, total_gold_gain, resource_limits, badges
+    }
+    
+    // Armies Collection - Askeri birimler
+    match /armies/{armyId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && resource.data.owner_id == request.auth.uid;
+      
+      // Army data based on BarrackDto$Unit
+      // Fields: _class, _start_level, age_point_multiplier, armor, army_count,
+      // cavalry_attack, cost, count, importance, infantry_attack, information,
+      // level, maxlevel, pierce_armor, place_id, production_feature
+    }
+    
+    // Technologies Collection - Teknoloji ve araştırmalar
+    match /technologies/{techId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && resource.data.owner_id == request.auth.uid;
+      
+      // Technology data based on AcademyDto
+      // Fields: age, building_name, complete_now_cost, defence_bonus, description,
+      // max_prods, ongoing, ongoing_unit, time_left, unit_details, units
+    }
+    
+    // Alliances Collection - İttifaklar
+    match /alliances/{allianceId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && 
+        (resource.data.alliance_leader == request.auth.uid ||
+         request.auth.uid in resource.data.members);
+      
+      // Alliance data based on AllianceDto
+      // Fields: alliance_leader, alliance_limit, alliance_member, alliance_rank,
+      // can_report, challengeGold, challengeWar, forum_unreads, invitations_count,
+      // member_count, newbie_member_count, owned_cities, request_already_sent,
+      // request_invite_sent, requests_count, suggested_member_count
+    }
+    
+    // Markets Collection - Pazar sistemi
+    match /markets/{marketId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && resource.data.owner_id == request.auth.uid;
+      
+      // Market data based on MarketDto
+      // Fields: age, building_name, capacity, complete_now_cost, defence_bonus,
+      // description, max_prods, ongoing, ongoing_unit, time_left, unit_details
+    }
+    
+    // Maps Collection - Harita verileri
+    match /maps/{mapId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && hasRole('admin');
+      
+      // Map data based on MapDto
+      // Fields: alliance_count, base, campaign_coordinates, cartography,
+      // center_count, city_count, cl_lang, cn_lang, colony_count, coordinates,
+      // grid_time, map_data
+    }
+    
+    // Battles Collection - Savaş raporları
+    match /battles/{battleId} {
+      allow read: if request.auth != null && 
+        (resource.data.attacker_id == request.auth.uid ||
+         resource.data.defender_id == request.auth.uid ||
+         request.auth.uid in resource.data.participants);
+      allow write: if request.auth != null && 
+        (resource.data.attacker_id == request.auth.uid ||
+         resource.data.defender_id == request.auth.uid);
+      
+      // Battle data based on LogsMilitaryWarReportDto
+      // Fields: attacker_casualties, attacker_name, attacker_ratio,
+      // defender_casualties, defender_ratio, defenders_list
+    }
+    
+    // Panel Collection - Oyun paneli ve görevler
+    match /panels/{panelId} {
+      allow read, write: if request.auth != null && resource.data.user_id == request.auth.uid;
+      
+      // Panel data based on PanelDto
+      // Fields: age, age_point, allianceInvitation, alliance_id, animDisplay,
+      // api_last_action, armageddon, tasks, tutorials, guides, challenges,
+      // building_processes, shop_types, rewards, campaigns
+    }
+    
+    // Chat Messages Collection - Sohbet mesajları
+    match /chat_messages/{messageId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.auth.uid == resource.data.sender_id;
+      allow update, delete: if request.auth != null && 
+        (request.auth.uid == resource.data.sender_id || hasRole('moderator'));
+    }
+    
+    // Game Sessions Collection - Oyun oturumları
+    match /game_sessions/{sessionId} {
+      allow read, write: if request.auth != null && resource.data.user_id == request.auth.uid;
+    }
+    
+    // Helper functions
+    function hasRole(role) {
+      return request.auth != null && 
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == role;
+    }
+    
+    function isOwner(resource) {
+      return request.auth != null && resource.data.owner_id == request.auth.uid;
+    }
+    
+    function isAllianceMember(resource) {
+      return request.auth != null && request.auth.uid in resource.data.alliance_members;
+    }
+  }
+}

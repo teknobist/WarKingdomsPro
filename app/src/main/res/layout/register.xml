@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/RootView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="10h" custom:wkWidth="100w">
+                <kingdom.strategy.war.customViews.WkTextView android:gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContentTextStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+            <kingdom.strategy.war.customViews.WkEditText android:id="@id/editText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:layout_alignParentTop="true" custom:wkHeight="8h" custom:wkMarginLeft="10w" custom:wkMarginRight="10w" custom:wkMarginTop="12h" custom:wkWidth="80w" style="@style/EditTextStyle">
+                <requestFocus />
+            </kingdom.strategy.war.customViews.WkEditText>
+            <kingdom.strategy.war.customViews.WkButton android:id="@id/wkButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/editText1" android:layout_centerHorizontal="true" custom:wkHeight="10h" custom:wkMarginTop="5h" custom:wkWidth="50w" style="@style/GreenButtonStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

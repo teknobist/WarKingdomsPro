@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/alliance_main_layout" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="5w" custom:wkPaddingRight="5w" custom:wkPaddingTop="5h">
+            <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_1" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMarginBottom="3h" style="@style/ContentTextStyle" />
+            <EditText android:id="@id/editText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="5" android:ems="300" android:singleLine="false" style="@style/EditTextStyle" />
+            <kingdom.strategy.war.customViews.WkButton android:layout_gravity="center" android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkMarginTop="5w" custom:wkWidth="35w" style="@style/GreenButtonStyle" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

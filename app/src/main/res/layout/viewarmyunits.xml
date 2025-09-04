@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="3w" custom:wkPaddingRight="3w" custom:wkPaddingTop="3h">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="5w" custom:wkMarginTop="1h" custom:wkWidth="90w" style="@style/ContentHeaderTextStyle" />
+                    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/gray_1" android:gravity="center_horizontal" android:id="@id/textView2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMarginBottom="1h" style="@style/CountdownTextStyle" />
+                    <kingdom.strategy.war.customViews.WkTextView android:gravity="center_horizontal" android:id="@id/textView3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMarginBottom="2w" style="@style/SmallContentTextStyle" />
+                    <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMarginBottom="1h" custom:wkMarginLeft="2w" custom:wkMarginRight="2w" style="@style/SmallContentTextStyle" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+            <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center" android:background="@drawable/bg_containerbar_tilable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" custom:wkHeight="10h" custom:wkWidth="94w">
+                <kingdom.strategy.war.customViews.WkButton android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="9w" custom:wkWidth="30w" style="@style/BlueButtonStyle" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/online" android:layout_alignParentLeft="true" android:layout_centerVertical="true" custom:wkHeight="5w" custom:wkWidth="5w" />
+    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true">
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/blue_1" android:gravity="center|left" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkMarginLeft="3w" custom:wkWidth="40w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:gravity="center" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkMarginRight="3w" custom:wkWidth="20w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:gravity="center" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkWidth="20w" style="@style/ContentTextStyle" />
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+</RelativeLayout>

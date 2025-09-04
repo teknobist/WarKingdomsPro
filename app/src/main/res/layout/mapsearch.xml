@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingBottom="1h" custom:wkPaddingLeft="5w" custom:wkPaddingRight="5w" custom:wkPaddingTop="4h">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <kingdom.strategy.war.customViews.WkEditText android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="12" android:layout_centerVertical="true" android:imeOptions="actionDone" custom:wkHeight="8h" custom:wkWidth="70w" style="@style/EditTextStyle">
+                        <requestFocus />
+                    </kingdom.strategy.war.customViews.WkEditText>
+                    <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center" android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/editText1" android:layout_centerVertical="true" custom:wkHeight="6h" custom:wkMarginLeft="4w" custom:wkWidth="15w" style="@style/PurpleButtonStyle">
+                        <kingdom.strategy.war.customViews.WkImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mono_magnifier_purple" custom:wkHeight="4.5h" custom:wkWidth="4.5h" />
+                    </kingdom.strategy.war.customViews.WkLinearLayout>
+                </RelativeLayout>
+                <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/gray_1" android:gravity="center_horizontal" android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SmallContentTextStyle" />
+                <kingdom.strategy.war.customViews.WkImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/separator_spear" custom:wkHeight="1h" custom:wkMarginBottom="1h" custom:wkMarginTop="2h" custom:wkWidth="90w" />
+                <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/gray_divider" android:dividerHeight="1.0dip" />
+            </kingdom.strategy.war.customViews.WkLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

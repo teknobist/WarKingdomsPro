@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkMarginLeft="4w" custom:wkMarginRight="4w" custom:wkMarginTop="2h">
+            <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center" android:id="@id/textView20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkHeight="80h" custom:wkWidth="90w" style="@style/ContentHeaderTextStyle" />
+            <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listviewselector" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" android:dividerHeight="10.0dip" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

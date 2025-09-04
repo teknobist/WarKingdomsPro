@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="9h" custom:wkWidth="85w">
+        <kingdom.strategy.war.customViews.WkTextView android:gravity="bottom" android:id="@id/wktv_message_title" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="5h" custom:wkMarginLeft="3w" custom:wkWidth="82w" style="@style/SmallContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/gray_1" android:gravity="top" android:id="@id/wktv_message_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/wktv_message_title" custom:wkHeight="4h" custom:wkMarginBottom="0.5h" custom:wkMarginLeft="3w" custom:wkWidth="85w" style="@style/CountdownTextStyle" />
+    </kingdom.strategy.war.customViews.WkRelativeLayout>
+</LinearLayout>

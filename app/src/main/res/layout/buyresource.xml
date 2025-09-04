@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabHost android:id="@android:id/tabhost" android:background="@drawable/bg_pagewithtab" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="6.7h" custom:wkMarginLeft="5w" custom:wkMarginRight="5w" custom:wkWidth="90w">
+                    <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </kingdom.strategy.war.customViews.WkLinearLayout>
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+</RelativeLayout>

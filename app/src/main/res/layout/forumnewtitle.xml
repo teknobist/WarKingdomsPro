@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/TopView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/TopViewL" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="6w" custom:wkPaddingRight="6w" custom:wkPaddingTop="5h">
+            <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="4h" custom:wkMarginTop="3h" custom:wkWidth="50w" style="@style/ContentTextStyle" />
+            <kingdom.strategy.war.customViews.WkEditText android:id="@id/editText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:imeOptions="actionDone" custom:wkHeight="8h" custom:wkWidth="85w" style="@style/EditTextStyle" />
+            <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="4h" custom:wkMarginTop="3h" custom:wkWidth="50w" style="@style/ContentTextStyle" />
+            <kingdom.strategy.war.customViews.WkEditText android:id="@id/editText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="5" android:ems="300" android:singleLine="false" custom:wkHeight="15h" custom:wkWidth="85w" style="@style/EditTextStyle" />
+            <kingdom.strategy.war.customViews.WkButton android:layout_gravity="center_horizontal" android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkMarginTop="5h" custom:wkWidth="30w" style="@style/GreenButtonStyle" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingLeft="3w" custom:wkPaddingRight="3w" custom:wkPaddingTop="2.5h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0" />
+    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="horizontal" android:id="@id/wklo_with_alliance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" custom:wkHeight="12w" custom:wkMargin="2.5w" custom:wkMarginLeft="2w" custom:wkWidth="91w" style="@style/WrapperStyle">
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkMarginLeft="3w" custom:wkWidth="15w" style="@style/SmallContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center_vertical" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkWidth="37w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkWidth="37w" style="@style/ContentTextStyle" />
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+    <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wklo_without_alliance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" custom:wkHeight="12w" custom:wkMargin="2.5w" custom:wkMarginLeft="2w" custom:wkWidth="91w" style="@style/WrapperStyle">
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_1" android:gravity="center" android:layout_gravity="center" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContentTextStyle" />
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+</kingdom.strategy.war.customViews.WkLinearLayout>

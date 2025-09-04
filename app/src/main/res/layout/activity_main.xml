@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/RootView" android:background="@drawable/intromain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_selectedWorld" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkMarginTop="65h" style="@style/ContentTextStyle" />
+    <kingdom.strategy.war.customViews.WkButton android:id="@id/btn_Enter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="9h" custom:wkWidth="50w" style="@style/IntroButton1Style" />
+    <kingdom.strategy.war.customViews.WkButton android:id="@id/btn_Worlds" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="8h" custom:wkMarginTop="3h" custom:wkWidth="40w" style="@style/IntroButton2Style" />
+</LinearLayout>

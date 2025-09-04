@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kingdom.strategy.war.customViews.WkRelativeLayout android:orientation="vertical" android:id="@id/pan_tut_back" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkHeight="100h" custom:wkWidth="100w"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkRelativeLayout android:id="@id/guide1" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="20w" custom:wkMarginLeft="15w" custom:wkMarginTop="55w" custom:wkWidth="20w">
+        <kingdom.strategy.war.customViews.WkImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_task" android:layout_centerInParent="true" custom:wkHeight="20w" custom:wkWidth="20w" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/white" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/ContentTextStyle" />
+    </kingdom.strategy.war.customViews.WkRelativeLayout>
+    <kingdom.strategy.war.customViews.WkLinearLayout android:gravity="right" android:orientation="vertical" android:background="@drawable/modalbox_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" custom:wkHeight="55h" custom:wkWidth="90w">
+        <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="55h" custom:wkPaddingBottom="6h" custom:wkPaddingRight="4h" custom:wkPaddingTop="6h" custom:wkWidth="40w">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/brown_1" android:gravity="center_vertical" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about" custom:wkHeight="8h" custom:wkWidth="35w" style="@style/ContentHeaderTextStyle" />
+                    <kingdom.strategy.war.customViews.WkTextView android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/about" style="@style/ForumEntryTextStyle" />
+                </kingdom.strategy.war.customViews.WkLinearLayout>
+            </ScrollView>
+            <kingdom.strategy.war.customViews.WkButton android:layout_gravity="center_horizontal" android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about" android:layout_weight="0.0" custom:wkHeight="6h" custom:wkWidth="25w" style="@style/GreenButtonStyle" />
+        </kingdom.strategy.war.customViews.WkLinearLayout>
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+    <kingdom.strategy.war.customViews.WkImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/advisor" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" custom:wkHeight="90w" custom:wkMarginLeft="-30w" custom:wkWidth="85w" />
+</kingdom.strategy.war.customViews.WkRelativeLayout>

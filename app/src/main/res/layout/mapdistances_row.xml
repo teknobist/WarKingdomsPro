@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="10w" custom:wkPaddingLeft="2w" custom:wkWidth="90w">
+        <kingdom.strategy.war.customViews.WkTextView android:gravity="center_vertical" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="8w" custom:wkWidth="58w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/brown_2" android:gravity="center_vertical" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="8w" custom:wkWidth="30w" style="@style/ContentTextStyle" />
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:src="@drawable/separator_line" android:scaleType="fitXY" />
+</LinearLayout>

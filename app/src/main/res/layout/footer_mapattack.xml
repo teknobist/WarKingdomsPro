@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/footer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <kingdom.strategy.war.customViews.WkImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/separator_spear" custom:wkHeight="1h" custom:wkWidth="90w" />
+        <kingdom.strategy.war.customViews.WkTextView android:gravity="center_horizontal" android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="6w" custom:wkWidth="90w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:gravity="center_horizontal" android:id="@id/textView4" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:wkHeight="6w" custom:wkWidth="90w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_2" android:gravity="center_horizontal" android:id="@id/textView5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6w" custom:wkWidth="90w" style="@style/ContentTextStyle" />
+        <kingdom.strategy.war.customViews.WkButton android:id="@id/btn_send_army" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="6h" custom:wkMarginBottom="2h" custom:wkWidth="50w" style="@style/RedButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

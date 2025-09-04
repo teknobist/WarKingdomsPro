@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <kingdom.strategy.war.customViews.WkLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:wkPaddingBottom="1h" custom:wkPaddingLeft="4w" custom:wkPaddingRight="4w" custom:wkPaddingTop="3h">
+        <kingdom.strategy.war.customViews.WkTextView android:textColor="@color/red_1" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textView4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:wkHeight="50h" custom:wkWidth="85w" style="@style/ContentTextStyle" />
+        <ListView android:id="@id/lv_armies" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" />
+    </kingdom.strategy.war.customViews.WkLinearLayout>
+</LinearLayout>
